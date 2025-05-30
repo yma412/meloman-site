@@ -1,0 +1,86 @@
+
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Цікавий факт</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      background-color: #2e2e2e;
+      color: white;
+      background-image: url('back.png');
+      background-size: cover;
+      padding: 10px;
+      opacity: 1;
+      transition: opacity 0.6s ease;
+    }
+    .modal {
+      max-width: 800px;
+      margin: 40px auto;
+      background-color: #2e2e2e;
+      opacity: 97%;
+      padding: 40px;
+      border-radius: 8px;
+    }
+    h1 {
+      font-size: 28px;
+      margin-bottom: 20px;
+    }
+    p {
+      font-weight: bold;
+      font-size: 14px;
+      line-height: 1.6;
+      text-align: justify;
+    }
+    .close-link {
+  float: right;
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: -30px;
+  margin-right: -10px;
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.close-link:hover {
+  color: #5b5a64;
+}
+    .video-container {
+      margin-top: 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    video {
+    width: 100%;
+      max-height: 200%;
+    }
+  </style>
+</head>
+<body>
+  <div class="modal">
+    <a href="ocean.html" class="close-link">&times;</a>
+    <h1>ЦІКАВИЙ ФАКТ</h1>
+    <p>
+      Кліп на пісню "Там, де нас нема" — перший професійний відеокліп "Океан Ельзи", знятий у 1998 році.
+      До цього гурт знімав лише аматорські відео у рідному Львові. Також ця робота стала першим
+      українським кліпом, який показали на MTV. Сама пісня була написана, коли Святослав Вакарчук
+      перебував на кораблі у Києві, де падав сніг, в той час як у Львові було тепло. Так і вийшло, що
+      "Там де нас нема, там не падає зима". До речі, сцену на Потьомкінських сходах (пародію на фільм
+      "Броненосець Потьомкін") було знято не в Одесі, як думають багато фанатів групи, а в Києві, у Парку Слави.
+    </p>
+    <div class="video-container">
+      <video controls>
+        <source src="videoplayback.mp4" type="video/mp4" />
+        Ваш браузер не підтримує відтворення відео.
+      </video>
+    </div>
+  </div>
+
+  </body>
+</html>
