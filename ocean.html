@@ -5,6 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Меломанський плеєр</title>
   <style>
+    * {
+    box-sizing: border-box;
+  }
+
     body {
       margin: 0;
       font-family: 'Georgia', serif;
@@ -16,13 +20,13 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      padding: 20px;
+      padding: 30px 15px;
     }
 
     h1 {
       font-size: 24px;
       text-align: center;
-      margin: 20px 0;
+      margin-bottom: 25px;
       color: black;
     }
 
@@ -31,10 +35,11 @@
       flex-direction: column;
       align-items: center;
       background-color: rgba(0,0,0,0.85);
-      padding: 20px;
-      border-radius: 12px;
+      padding: 20px 15px;
+      border-radius: 16px;
       max-width: 400px;
       width: 100%;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
     }
 
     .tape-container {
@@ -47,10 +52,11 @@
     .tape-button {
       background: none;
       border: none;
-      font-size: 32px;
+      font-size: 28px;
       color: white;
       cursor: pointer;
       padding: 10px;
+      line-height: 1;
     }
 
     .tape-image {
@@ -64,11 +70,12 @@
       font-size: 16px;
       font-weight: bold;
       text-align: center;
-      margin-bottom: 10px;
+      margin-bottom: 12px;
     }
 
     audio {
       width: 100%;
+      border-radius: 12px;
     }
 
      a {
@@ -76,14 +83,20 @@
       color: aliceblue;
     }
 
-    @media (min-width: 600px) {
-      .tape-image {
-        width: 300px;
-      }
-      h1 {
-        font-size: 28px;
-      }
+     @media (min-width: 600px) {
+    h1 {
+      font-size: 30px;
     }
+
+    .tape-image {
+      width: 280px;
+    }
+
+    .player {
+      padding: 30px;
+    }
+  }
+
   </style>
 </head>
 <body>
